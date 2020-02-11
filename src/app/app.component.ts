@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Ejercicio1';
+
+  tex = ""
+  
+  PopUp(Texto:HTMLInputElement): void {
+    if(Texto.value===""){
+      alert("El cuadro de texto esta vacío")
+    }
+    else{
+      console.log(Texto.value)
+      this.tex=Texto.value
+      alert("Texto actualizado")
+    }
+  }
 }
